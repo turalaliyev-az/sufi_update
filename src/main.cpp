@@ -196,12 +196,13 @@ void sola() {
 void beli() {
   setServoAngle(BAS, 170);
   waitMs(500);
-  setServoAngle(BAS, 140);
+  setServoAngle(BAS, 160);
   waitMs(500);
   setServoAngle(BAS, 170);
   waitMs(500);
-  setServoAngle(BAS, 140);
+  setServoAngle(BAS, 160);
   waitMs(500);
+
 }
 
 void xeyr() {
@@ -367,7 +368,7 @@ void setup() {
 
   // Gövde
   setupServo(BOYUN, 9, 90, 5, 0, 180);
-  setupServo(BAS, 10, 150, 5, 0, 180);
+  setupServo(BAS, 10, 160, 5, 0, 180);
 
 
   Serial.print(SERVO_COUNT);
