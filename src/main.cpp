@@ -242,11 +242,12 @@ void pis() {
 
 void helelik() {
   setServoAngle(SAG_DIRSEK, 0);
-  setServoAngle(SAG_KUREK, 98);
+  setServoAngle(SAG_KUREK, 96);
   setServoAngle(SAG_CIYIN, 105);
   
   setServoAngle(SOL_DIRSEK, 140);
   setServoAngle(SOL_CIYIN, 118);
+  setServoAngle(SOL_KUREK, 100);
   
   waitMs(2000);
   
@@ -266,6 +267,7 @@ void helelik() {
   
   setServoAngle(SOL_DIRSEK, 100);
   setServoAngle(SOL_CIYIN, 72);
+  setServoAngle(SOL_KUREK, 126);
   waitMs(1000);
 }
 
@@ -307,10 +309,11 @@ void reqs() {
   waitMs(1000);
 
     for(uint8_t i=0; i<2; i++){
-    setServoAngle(SAG_KUREK, 70, 5); 
-    setServoAngle(SOL_KUREK, 100, 5);
+    setServoAngle(SAG_KUREK, 120, 5); 
     waitMs(1500);
-    setServoAngle(SAG_KUREK, 80, 5);
+    setServoAngle(SAG_KUREK, 50, 5);
+    waitMs(1500);
+    setServoAngle(SOL_KUREK, 70, 5);
     waitMs(1500);
     setServoAngle(SOL_KUREK, 126, 5);
     waitMs(1500);
